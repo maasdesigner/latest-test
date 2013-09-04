@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<%= render '/refinery/html_tag' %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <%= render '/refinery/head' %>
+
+  <body>
+
+  <%= image_tag "bg.jpg", class: "bgimage"%>
+    <%= site_bar -%>
+    <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+
+
+    <div id="page_container">
+
+
+      <div class="header">
+        <div class="head">
+          <%= link_to "Ana Sayfa", "home", class: "navigator"%>
+        <%= render '/refinery/header' -%>
+      </div></div>
+
+
+      <section id="page">
+        <div class="banner">
+        <%= yield %>
+        </div> </section>
+
+
+    </div>
+
+
+    <%= render '/refinery/javascripts' %>
+
+  </body>
+</html>

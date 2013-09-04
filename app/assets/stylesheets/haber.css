@@ -1,0 +1,36 @@
+
+.haber{
+	width:800px;
+	background: none;
+	float: right;
+	margin-top: 25px;
+}
+.haberlerimiz{
+	width: 750px;
+	background: none;
+	color:black;
+    padding-bottom: 5px;
+	margin-top:25px;
+	margin-left: 25px;
+	text-align: left;
+	font-size:14px;
+	color:#000;
+	font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px dashed #159cee;
+}
+.habertext{
+	font-size:15px;
+	color:#000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:left;
+	padding-bottom:5px;
+    padding-top:5px;
+    width:350px;
+}
+p{
+	padding-top:5px;
+	font-size:14px;
+	color:#000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:left;
+}

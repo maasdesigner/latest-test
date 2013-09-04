@@ -1,0 +1,115 @@
+.lb-album {
+  margin: 0 auto;
+  width:780px;
+  font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+}
+.lb-album li {
+  margin: 5px;
+  float: left;
+  position: relative;
+    background:none;
+    border:1px #2066b1 dashed;
+}
+.lb-album li > a, .lb-album li > a img {
+  display: block;
+}
+.lb-album li > a {
+  padding: 10px;
+  -moz-border-radius-topright: 5px;
+  position: relative;
+  height: 150px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomright: 5px;
+  width: 150px;
+  -moz-border-radius-bottomleft: 5px;
+}
+.lb-album li > a span {
+  background: #003399  repeat scroll 0% 50%;
+  opacity: 0;
+  line-height: 150px;
+  width: 150px;
+  text-align: center;
+  top: 10px;
+  height: 150px;
+  left: 10px;
+  font-size:12px;
+  position: absolute;
+  color:#ffffff;
+}
+.lb-album li > a:hover span {
+  opacity: 1;
+}
+.lb-overlay {
+  padding: 0px;
+  background: rgba(255, 255, 255, 0.5) repeat scroll 0% 50%;
+  overflow: hidden;
+  width: 0px;
+  height: 0px;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+}
+.lb-overlay > div {
+  margin: 10px auto 0px;
+  position: relative;
+  opacity: 0;
+  width: 550px;
+}
+.lb-overlay div h3, .lb-overlay div p {
+  padding: 0px 20px;
+  width: 200px;
+  height: 60px;
+}
+.lb-overlay div h3 {
+  font-size: 36px;
+  float: left;
+  text-align: right;
+}
+.lb-overlay div h3 span, .lb-overlay div p {
+  font-size: 16px;
+  font-family: Constantia,Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+  font-style: italic;
+}
+.lb-overlay div h3 span {
+  display: block;
+  line-height: 6px;
+}
+.lb-overlay div p {
+  text-align: left;
+  float: left;
+  width: 260px;
+}
+.lb-overlay a.lb-close {
+  background:url(close.png);
+  overflow: hidden;
+  color: #ffffff;
+  top:30px;
+  font-size: 15px;
+  text-align: center;
+  height:50px;
+  opacity: 0;
+  z-index: 1001;
+  position: absolute;
+  left: 50%;
+  line-height: 26px;
+  width: 50px;
+  margin-left: -25px;
+}
+.lb-overlay img {
+  max-height: 100%;
+  position: relative;
+}
+.lb-overlay:target {
+  padding: 80px 100px 120px;
+  width: auto;
+  height: auto;
+  bottom: 0px;
+  right: 0px;
+}
+.lb-overlay:target img {
+}
+.lb-overlay:target a.lb-close, .lb-overlay:target > div {
+  opacity: 1;
+}
