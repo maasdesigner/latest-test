@@ -1,2 +1,16 @@
+
+<% content_for :body_content_right do %>
+    <ul class='lb-album'>
+      <% @page.images.each do |image| %>
+          <li>
+            <%= link_to image_tag(image.thumbnail("200x200#c").url) %>
+            <div class="lb-overlay" id="id<%= 'image.thumbnail.url' %>">
+              <%= link_to 'image.thumbnail.url', class: "lb-close" %>
+            <%= image_tag image.thumbnail("900x600").url %>
+            </div>
+          </li>
+      <% end %>
+    </ul>
+<% end %>
 <%= render '/refinery/content_page', :hide_sections => :body_content_title %>
 <%= render '/refinery/photo_gallery/albums/show' %>
